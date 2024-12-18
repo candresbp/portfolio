@@ -1,0 +1,68 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h4 {
+  color: #333;
+}
+
+/* Sección de bienvenida */
+#home {
+  padding: 100px 0;
+  background-color: #f0f0f0;
+}
+
+/* Proyecto cards */
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  margin-top: 10px;
+}
+
+/* Sección de contacto */
+#contact {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Animaciones */
+h1 {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
